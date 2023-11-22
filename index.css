@@ -8,7 +8,27 @@ body {
     height: 100vh;
     color: #0c0b0b; /* Texto en blanco para mayor contraste */
 }
+#seleccionIdioma {
+    
+    margin-bottom: 20px;
+    justify-content: center;
+    text-align: center;
+}
+form {
+    max-width: 400px;
+    margin: 0 auto;
+    background-color: rgb(50, 133, 105);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+#encabezado {
+    width: 900px; 
+    height: auto;
+    max-width: 1000vw;
+    max-height: 200px;
 
+}
 
 #contenido {
     display: flex;
