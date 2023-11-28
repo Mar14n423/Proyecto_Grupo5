@@ -12,16 +12,16 @@
     <img id="encabezado" src="imagen\portada2.png" alt="Imagen de encabezado">
     <!-- Página de selección de idioma -->
     <div id="seleccionIdioma">
-        <h2>Selecciona tu idiomas</h2>
+        <h2>Selecciona tu idioma</h2>
         <select id="idiomaSelect" onchange="cambiarIdioma()">
             <option value="es">Español</option>
             <option value="en">English</option>
         </select>
-        <button id="siguienteBtn" onclick="cambiarIdioma()">Siguiente</button>
+        <button id="siguienteBtn" class="btn-siguiente" onclick="cambiarIdioma()">Siguiente</button>
     </div>
 
     <!-- Página del formulario de registro -->
-    <div id="formularioRegistro" style="display: none;">
+    <div id="formularioRegistro">
         <h2>Formulario de Registro para Médicos</h2>
         <form action="procesar_registro.php" method="post">
             <label for="nombre">Nombre:</label>
@@ -40,7 +40,6 @@
             <input type="password" id="password" name="password" required>
 
             <input type="submit" value="Registrarse">
-            <button id="confirmar" onclick="cambiarIdioma()">Confirmar</button>
         </form>
     </div>
 

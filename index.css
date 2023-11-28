@@ -9,10 +9,24 @@ body {
     color: #0c0b0b; /* Texto en blanco para mayor contraste */
 }
 #seleccionIdioma {
-    
-    margin-bottom: 20px;
-    justify-content: center;
-    text-align: center;
+    text-align: center; /* Centra el contenido horizontalmente */
+    margin-top: 300px; /* Espacio superior */
+    margin-left: 10px; /* Espacio izquierdo */
+    margin-right: 800px; /* Espacio derecho */
+}
+
+#idiomaSelect {
+    margin-bottom: 10px; /* Espacio entre el selector y el botón siguiente */
+}
+
+#siguienteBtn {
+    background-color: rgb(50, 133, 105);
+    color: #fff; /* Color del texto del botón siguiente */
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    border-radius: 4px;
 }
 form {
     max-width: 400px;
@@ -25,8 +39,11 @@ form {
 #encabezado {
     width: 900px; 
     height: auto;
-    max-width: 1000vw;
-    max-height: 200px;
+    max-width: 1500vw;
+    max-height: 150px;
+    margin: 0 auto; 
+    display: block;
+    
 
 }
 
@@ -62,13 +79,15 @@ input[type="submit"] {
 h2 {
     color: #080808; /* Texto en blanco para mayor contraste */
 }
-#btnSiguiente {
-    margin-top: 10px;
-    padding: 10px 20px;
-    font-size: 16px;
-    cursor: pointer;
+
+
+
+#formularioRegistro {
+    display: none; 
+    max-width: 400px;
+    margin: 20px auto;
     background-color: rgb(50, 133, 105);
-    color: white;
-    border: none;
-    border-radius: 4px;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
