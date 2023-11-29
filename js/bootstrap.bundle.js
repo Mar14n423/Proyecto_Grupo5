@@ -60,19 +60,13 @@
 
     return target;
   }
-  function mostrarFormulario() {
-    var selectBox = document.getElementById("select-box2");
-    var loginForm = document.getElementById("loginForm");
-    var registerForm = document.getElementById("registerForm");
-
-    if (selectBox.value === "login") {
-                loginForm.classList.remove("hidden");
-                registerForm.classList.add("hidden");
-    } else if (selectBox.value === "register") {
-                loginForm.classList.add("hidden");
-                registerForm.classList.remove("hidden");
-      }
+i.signup = function() {
+  d.openSignupForm()
   }
+,
+i.signin = function() {
+  d.openLoginForm("home")
+}
 
   function _inheritsLoose(subClass, superClass) {
     subClass.prototype = Object.create(superClass.prototype);
