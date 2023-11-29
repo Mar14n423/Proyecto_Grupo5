@@ -1,0 +1,50 @@
+@api  = http://localhost:3000/patients
+@api2 = http://localhost:3000/medicdate
+
+### Obtener el paciente
+
+GET {{api}}
+
+### Obtener la cita 
+
+GET {{api2}}
+
+### Agregar Paciente
+POST {{api}}
+Content-Type: application/json
+
+{
+    "Nombre": "Javier",
+    "Apellido": "Milei",
+    "FechaNac": "2/2/1997",
+    "Genero": "M",
+    "Direccion": "A.v Gaucha",
+    "Celular": "6594584",
+    "HistorialMed": "Fiebre de Libertad"
+}
+
+###
+
+GET {{api}}/2
+
+### eliminarUnPaciente
+
+DELETE {{api}}/6
+
+### cantidad total de pacientes
+
+GET {{api}}/count
+
+### Actualizar paciente
+PUT {{api}}/7
+Content-Type: application/json
+
+{
+    "Nombre": "Ana",
+    "Apellido": "Saenz",
+    "FechaNac": "15/03/1991",
+    "Genero": "F",
+    "Direccion": "A.v Quintanilla",
+    "Celular": "6396003",
+    "HistorialMed": "Sarna"
+}
