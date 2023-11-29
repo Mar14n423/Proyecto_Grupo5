@@ -102,11 +102,12 @@
                                  <li class="nav-item">
                                     <a class="nav-link" href="doctores.html">Doctores</a>
                                  </li>
-                                 <li class="nav-item">
-                                    <a class="nav-link" href="contact.html"> contact us </a>
-                                 </li>
+                                 
                                  <li class="nav-item">
                                     <a class="nav-link" href="mas.html"> Iniciar Sesión </a>
+                                 </li>
+                                 <li class="nav-item">
+                                    <a class="nav-link" href="contact.html"> Pacientes </a>
                                  </li>
                               </ul>
                            </div>
@@ -132,42 +133,68 @@
             <div class="row">
                <div class="col-md-7">
                   <div class="titlepage">
-                     <h2><strong class="yellow">Bienvenido</strong><br> PODRA SACAR LA CITA, SOLO RELLENE TODOS LOS ESPACIOS NECESARIOS</h2>
+                     <h2><strong class="yellow">Bienvenido</strong><br> PODRA SACAR LA CITA,SELECCIONA EL DE SU PREFERENCIA</h2>
                   </div>
                </div>
             </div>
-            <div class="wrapper">
-               <div class="select-btn">
-                  <span>Seleccione la especialidad que desee</span>
-                  <i class="uil uil-angle-down"></i>
-               </div>
-               <div class="content">
-                  <div class="search">
-                     <i class="uil uil-search"></i>
-                     <input type="text" placeholder="Buscar">
-                  </div>
-                  <ul class="options">
-                     <li>Cardiología</li>
-                     <li>Anestesiología</li>
-                     <li>Cardiología Pediatrica</li>
-                     <li>Cirugía Cardiotorácica</li>
-                     <li>Cirugía Cardiovascular</li>
-                     <li>Cirugía Plástica</li>
-                     <li>Dermatología</li>
-                     <li>Endocrinología</li>
-                     <li>Gastroenterología</li>
-                     <li>Fisioterapia</li>
-                     <li>Ginecología</li>
-                     <li>Medicina interna</li>
-                     <li>Neumología</li>
-                     <li>Oftalmología</li>
-                     <li>Pedriatria</li>
-                     <li>Traumatología</li>
-                  </ul>
-               </div>
-
-            </div>
-            
+            <table id="customers">
+               <tr>
+                 <th>Especialdiad</th>
+                 <th>Horario</th>
+                 <th>Doctor Disponible</th>
+               </tr>
+               <tr onclick="mostrarVentana('Reumatología')">
+                 <td>Reumatología</td>
+                 <td>14:00 - 14:30</td>
+                 <td>Dr. Nestor Gareca</td>
+               </tr>
+               <tr onclick="mostrarVentana('Medicina interna')">
+                 <td>Medicina interna</td>
+                 <td>08:00 - 08:45</td>
+                 <td>Dr. Patricia Peña</td>
+               </tr>
+               <tr onclick="mostrarVentana('Medicina interna')">
+                 <td>Medicina interna</td>
+                 <td>10:35 - 11:00</td>
+                 <td>Dr. Pablo Cuellar</td>
+               </tr>
+               <tr onclick="mostrarVentana('Pedriatria')">
+                 <td>Pedriatria</td>
+                 <td>15:00 - 15:30</td>
+                 <td>Dr. Augusto Caballero</td>
+               </tr>
+               <tr onclick="mostrarVentana('Cardiología')">
+                 <td>Cardiología</td>
+                 <td>15:00 - 15:45</td>
+                 <td>Dr. Ramona Fernandez</td>
+               </tr>
+               <tr onclick="mostrarVentana('Dermatología')">
+                 <td>Dermatología</td>
+                 <td>14:45 - 15:00</td>
+                 <td>Dr. Esther Diaz</td>
+               </tr>
+               <tr onclick="mostrarVentana('Dermatología')">
+                 <td>Dermatología</td>
+                 <td>09:00 - 09:30</td>
+                 <td>Dr. Linda Mendoza</td>
+               </tr>
+               <tr onclick="mostrarVentana('Traumatología')">
+                 <td>Traumatología</td>
+                 <td>10:10 - 10:45</td>
+                 <td>Dr. Francisco Antezana</td>
+               </tr>
+               <tr onclick="mostrarVentana('Cardiología Pediatrica')">
+                 <td>Cardiología Pediatrica</td>
+                 <td>17:20 - 17:55</td>
+                 <td>Dr. Miranda Claros</td>
+               </tr>
+               <tr onclick="mostrarVentana('Cirugía Cardiovascular')">
+                 <td>Cirugía Cardiovascular</td>
+                 <td>13:00 - 17:30</td>
+                 <td>Dr. Florencio Ferrufino</td>
+               </tr>
+            </table>
+         
          </div>
       </div>
       </div>

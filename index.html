@@ -105,11 +105,12 @@
                               <li class="nav-item">
                                  <a class="nav-link" href="doctores.html">Doctores</a>
                               </li>
-                              <li class="nav-item">
-                                 <a class="nav-link" href="contact.html"> Pacientes </a>
-                              </li>
+                             
                               <li class="nav-item">
                                  <a class="nav-link" href="mas.html"> Iniciar Sesión </a>
+                              </li>
+                              <li class="nav-item">
+                                 <a class="nav-link" href="contact.html"> Pacientes </a>
                               </li>
                            </ul>
                         </div>
@@ -668,7 +669,7 @@
          <div class="row">
             <div class="col-md-12">
                <div class="titlepage">
-                  <h2><strong class="yellow">Contact us</strong><br>Request a call back</h2>
+                  <h2><strong class="yellow">Ingresar datos</strong><br>Seguros Medicos</h2>
                </div>
             </div>
          </div>
@@ -677,19 +678,19 @@
                <form id="post_form" class="contact_form">
                   <div class="row">
                      <div class="col-md-12 ">
-                        <input class="contact_control" placeholder=" Name" type="type" name="Name">
+                        <input class="contact_control" placeholder=" Nombre del Paciente" type="text" name="Name"required>
                      </div>
                      <div class="col-md-12">
-                        <input class="contact_control" placeholder="Email" type="type" name="Email">
+                        <input class="contact_control" placeholder="Compañia de Seguros" type="text" name="seguros" required>
                      </div>
                      <div class="col-md-12">
-                        <input class="contact_control" placeholder="Phone Number " type="type" name="Phone Number ">
+                        <input class="contact_control" placeholder="Número de Póliza " type="text" name="compania "required>
                      </div>
                      <div class="col-md-12">
-                        <textarea class="textarea" placeholder="Message" type="type" Message="Name">Message </textarea>
+                        <input class="contact_control" placeholder="Tipo de cobertura(parcial o total) " type="text" name="cobertura "required>
                      </div>
                      <div class="col-md-12">
-                        <button class="send_btn">Send</button>
+                        <button class="send_btn">Enviar</button>
                      </div>
                </form>
             </div>
@@ -698,6 +699,50 @@
    </div>
    </div>
    <!-- end contact  section -->
+   <!-- Botón para abrir el formulario -->
+   <button id="abrirFormularioBtn" onclick="abrirFormulario()">Pagos</button>
+
+   <!-- Formulario -->
+   <div id="formulario">
+       <!-- Botón "X" para cerrar el formulario -->
+       <span id="cerrarFormularioBtn" onclick="cerrarFormulario()">x</span>
+
+       <!-- Contenido del formulario -->
+      
+       
+       <!-- Campos del formulario aquí -->
+       <form id="registroPagosForm" action="procesar_registro_pagos.php" method="post" onsubmit="return validarMonto()">
+           <h2>Formulario de Registro de Pagos</h2>
+           <div class="row">
+               <div class="col-md-12 ">
+                  <input class="contact_control" placeholder=" Nombre del Paciente" type="text" name="Nombre" required> 
+               </div>
+               <div class="col-md-12">
+                  <input class="contact_control" placeholder="Motivo de pago" type="text" name="motivo" required> 
+               </div>
+               <div class="col-md-12">
+                   <input class="contact_control" placeholder="Monto" type="number" name="monto" min="0.01" step="0.01" required> 
+                </div>
+               <div class="col-md-12">
+                   <label for="fechaNacimiento">Fecha de Pago:</label>
+                   <input class="contact_control" type="date" id="fechapago" name="fechaPago" required>
+                </div>
+                
+                <div class="col-md-12">
+                   <button class="send_btn">Registar Pago</button>
+                </div>
+           </div>
+       </form>
+     </div>
+     <script>
+      function abrirFormulario() {
+          document.getElementById('formulario').style.display = 'block';
+      }
+
+      function cerrarFormulario() {
+          document.getElementById('formulario').style.display = 'none';
+      }
+  </script>
    <!--  footer -->
    <footer >
       <div class="footer">

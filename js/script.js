@@ -62,3 +62,11 @@ anchoPage();
             caja_trasera_login.style.opacity = "1";
         }
 }
+function mostrarVentana(company) {
+    var confirmacion = confirm('¿Desea tomar la cita para ' + company + '?');
+    
+    if (confirmacion) {
+      // Aquí puedes agregar lógica adicional si el usuario acepta la cita
+      alert('Cita tomada exitosamente.');
+    }
+  }

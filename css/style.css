@@ -654,6 +654,47 @@ ul.sign li a i {
      height: 1px;
      right: -111px;
 }
+  /* Estilos del botón para abrir el formulario */
+  #abrirFormularioBtn {
+     background-color: rgb(50, 133, 105);
+     color: #fff;
+     padding: 10px 20px;
+     font-size: 16px;
+     cursor: pointer;
+     border: none;
+     border-radius: 4px;
+     position: fixed;
+     bottom: 20px;
+     right: 20px;
+ }
+
+
+ /* Estilos del formulario */
+ #formulario {
+     display: none;
+     position: fixed;
+     top: 50%;
+     left: 50%;
+     transform: translate(-50%, -50%);
+     padding: 20px;
+     background-color: rgb(50, 133, 105);
+     border: 3px solid #ccc;
+     border-radius: 8px;
+     color: #fff;
+     margin: 0 auto;
+     text-align: center;
+     max-width: 200px;
+
+
+ }
+
+ /* Estilos de la "X" para cerrar el formulario */
+ #cerrarFormularioBtn {
+     position: absolute;
+     top: 10px;
+     right: 10px;
+     cursor: pointer;
+ }
 
 
 /** mas section **/
@@ -1017,7 +1058,28 @@ ul.sign li a i {
      border-width: 90px;
 }
 
-
+#customers {
+     font-family: Arial, Helvetica, sans-serif;
+     border-collapse: collapse;
+     width: 100%;
+   }
+   
+   #customers td, #customers th {
+     border: 1px solid #ddd;
+     padding: 8px;
+   }
+   
+   #customers tr:nth-child(even){background-color: #f2f2f2;}
+   
+   #customers tr:hover {background-color: #ddd;}
+   
+   #customers th {
+     padding-top: 12px;
+     padding-bottom: 12px;
+     text-align: left;
+     background-color: #04AA6D;
+     color: white;
+   }
 /** end portfolio section **/
 
 
@@ -1157,6 +1219,28 @@ ul.social_icont li a {
      bottom: -30px;
      align-items: center;
 }
+#customers {
+     font-family: Arial, Helvetica, sans-serif;
+     border-collapse: collapse;
+     width: 100%;
+   }
+   
+   #customers td, #customers th {
+     border: 1px solid #ddd;
+     padding: 8px;
+   }
+   
+   #customers tr:nth-child(even){background-color: #f2f2f2;}
+   
+   #customers tr:hover {background-color: #ddd;}
+   
+   #customers th {
+     padding-top: 12px;
+     padding-bottom: 12px;
+     text-align: left;
+     background-color: #04AA6D;
+     color: white;
+   }
 
 .team_Carousel .carousel-indicators .active {
      background-color: #fff;
@@ -1296,7 +1380,12 @@ ul.social_icont li a {
      border-bottom: #003471 solid 1px !important;
      border: inherit;
 }
+.registroPagosForm .send_btn{
+     background-color: #f2db18;
+     color: #fffefe;
+     font-size: 20px;
 
+}
 .contact_form .send_btn {
      font-size: 20px;
      transition: ease-in all 0.5s;
