@@ -8,7 +8,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1">
       <meta name="viewport" content="initial-scale=1, maximum-scale=1">
       <!-- site metas -->
-      <title>Caja Petrolera de Salud Proyecto</title>
+      <title>Login y Register</title>
       <meta name="keywords" content="">
       <meta name="description" content="">
       <meta name="author" content="">
@@ -26,6 +26,7 @@
       <!-- Tweaks for older IEs-->
       <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css" media="screen">
+      <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
       <!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script><![endif]-->
@@ -91,7 +92,7 @@
                         <div class="collapse navbar-collapse" id="navbarsExample04">
                            <ul class="navbar-nav mr-auto">
                               <li class="nav-item ">
-                                 <a class="nav-link" href="index.html"> Home  </a>
+                                 <a class="nav-link" href="index.html"> Inicio  </a>
                               </li>
                               <li class="nav-item">
                                  <a class="nav-link" href="about.html">about</a>
@@ -103,7 +104,7 @@
                                  <a class="nav-link" href="team.html">team </a>
                               </li>
                               <li class="nav-item active">
-                                 <a class="nav-link" href="client.html">Clients</a>
+                                 <a class="nav-link" href="mas.html">Iniciar Sesión</a>
                               </li>
                               <li class="nav-item">
                                  <a class="nav-link" href="contact.html"> contact us </a>
@@ -125,20 +126,50 @@
    </header>
    <!-- end header inner -->
    <!-- end header -->
-      <!-- about section -->
-      <div id="about" class="about">
-         <div class="container-fluid">
-            <div class="row">
-               <div class="col-md-12 col-lg-5">
-                  <div class="about_img">
-                     <figure><img src="images/about_img2.jpg" alt="#"/></figure>
-                  </div>
-               </div>
-            </div>
+   <!--Iniciar sesión-->
+   <main>
+      <div class="contenedor__todo">
+         <div class="caja__trasera">
+             <div class="caja__trasera-login">
+                 <h3>¿Ya tienes una cuenta?</h3>
+                 <p>Inicia sesión para entrar en la página</p>
+                 <button id="btn__iniciar-sesion">Iniciar Sesión</button>
+             </div>
+             <div class="caja__trasera-register">
+                 <h3>¿Aún no tienes una cuenta?</h3>
+                 <p>Regístrate para que puedas iniciar sesión</p>
+                 <button id="btn__registrarse">Regístrarse</button>
+             </div>
          </div>
-      </div>
-      <!-- about section -->
-     
+
+         <!--Formulario de Login y registro-->
+         <div class="contenedor__login-register">
+             <!--Login-->
+             <form action="" class="formulario__login">
+                 <h2>Iniciar Sesión</h2>
+                 <input type="text" placeholder="Usuario" required>
+                 <input type="password" placeholder="Contraseña" required>
+                 <button>Entrar</button>
+             </form>
+
+             <!--Register-->
+             <form action="" class="formulario__register">
+                 <h2>Regístrarse</h2>
+                 <input type="text" placeholder="Nombre" required>
+                 <input type="text" placeholder="Apellidos" required>
+                 <input type="text" placeholder="Correo Electronico" required>
+                 <input type="text" placeholder="Usuario" required>
+                 <input type="text" placeholder="Género">
+                 <input type="tel" placeholder="Número de telefono" required>
+                 <input type="password" placeholder="Contraseña" required>
+                 <button>Regístrarse</button>
+             </form>
+         </div>
+     </div>
+   </main>
+   <!--Fin de formulario de registro-->
+   <script src="js/script.js"></script>
+   
 
       <!-- Javascript files-->
       <script src="js/jquery.min.js"></script>

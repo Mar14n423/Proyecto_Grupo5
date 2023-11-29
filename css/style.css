@@ -78,6 +78,7 @@ h6 {
      margin: 0
 }
 
+
 h1 {
      font-size: 24px;
      font-family: 'Raleway', sans-serif;
@@ -460,7 +461,7 @@ ul.conta_icon li a:hover {
 }
 
 .header_bo {
-     background-color: #032154;
+     background-color: rgb(50, 133, 105);
      width: 100%;
      height: 70px;
 }
@@ -614,7 +615,7 @@ ul.sign li a i {
 
 .titlepage h2 {
      font-size: 36px;
-     color: #154492;
+     color: rgb(50, 133, 105);
      line-height: 45px;
      font-weight: bold;
      padding: 0;
@@ -675,8 +676,166 @@ ul.sign li a i {
      box-sizing: border-box;
      text-decoration: none;
      font-family: sans-serif;
-     background-image: images/fondodoc.jpg;
+     background-image: url(../images/fondodoc.jpg);
+     background-size: cover;
+     background-repeat: no-repeat;
+     background-position: center;
+     background-attachment: fixed;
+
 }
+
+.contenedor__todo{
+     width: 100%;
+     max-width: 800px;
+     margin: auto;
+     position: relative;
+ }
+ 
+ .caja__trasera{
+     width: 100%;
+     padding: 50px 20px;
+     display: flex;
+     justify-content: center;
+     -webkit-backdrop-filter: blur(10px);
+     backdrop-filter: blur(10px);
+     background-color:rgb(50, 133, 105);
+ 
+ }
+ 
+ .caja__trasera div{
+     margin: 100px 40px;
+     color: white;
+     transition: all 500ms;
+ }
+ 
+ 
+ .caja__trasera div p,
+ .caja__trasera button{
+     margin-top: 30px;
+ }
+ 
+ .caja__trasera div h3{
+     font-weight: 400;
+     font-size: 26px;
+ }
+ 
+ .caja__trasera div p{
+     font-size: 16px;
+     font-weight: 300;
+ }
+ 
+ .caja__trasera button{
+     padding: 10px 40px;
+     border: 2px solid #fff;
+     font-size: 14px;
+     background: transparent;
+     font-weight: 600;
+     cursor: pointer;
+     color: white;
+     outline: none;
+     transition: all 300ms;
+ }
+ 
+ .caja__trasera button:hover{
+     background: #fff;
+     color:rgb(50, 133, 105);
+ }
+ 
+ /*Formularios*/
+ 
+ .contenedor__login-register{
+     display: flex;
+     align-items: center;
+     width: 100%;
+     max-width: 380px;
+     position: relative;
+     top: -185px;
+     left: 10px;
+
+     transition: left 500ms cubic-bezier(0.175, 0.885, 0.320, 1.275);
+ }
+ 
+ .contenedor__login-register form{
+     width: 100%;
+     padding: 15px 20px;
+     background: white;
+     position: absolute;
+     border-radius: 20px;
+ }
+ 
+ .contenedor__login-register form h2{
+     font-size: 30px;
+     text-align: center;
+     margin-bottom: 20px;
+     color:rgb(50, 133, 105);
+ }
+ 
+ .contenedor__login-register form input{
+     width: 100%;
+     margin-top: 20px;
+     padding: 10px;
+     border: none;
+     background: #F2F2F2;
+     font-size: 16px;
+     outline: none;
+ }
+ 
+ .contenedor__login-register form button{
+     padding: 10px 40px;
+     margin-top: 40px;
+     border: none;
+     font-size: 14px;
+     background: rgb(50, 133, 105);
+     font-weight: 600;
+     cursor: pointer;
+     color: white;
+     outline: none;
+ }
+ 
+ 
+ 
+ 
+ .formulario__login{
+     opacity: 1;
+     display: block;
+ }
+ .formulario__register{
+     display: none;
+ }
+ 
+ 
+ 
+ @media screen and (max-width: 850px){
+ 
+     main{
+         margin-top: 50px;
+     }
+ 
+     .caja__trasera{
+         max-width: 350px;
+         height: 300px;
+         flex-direction: column;
+         margin: auto;
+     }
+ 
+     .caja__trasera div{
+         margin: 0px;
+         position: absolute;
+     }
+ 
+ 
+     /*Formularios*/
+ 
+     .contenedor__login-register{
+         top: -10px;
+         left: -5px;
+         margin: auto;
+     }
+ 
+     .contenedor__login-register form{
+         position: relative;
+     }
+ }
 
 /** end mas section **/
 
@@ -836,7 +995,7 @@ ul.sign li a i {
 #myCarousel .carousel-control-prev {
      width: 60px;
      height: 60px;
-     background: #29426c;
+     background: rgb(50, 133, 105);
      opacity: 1;
      display: flex;
      align-items: center;
@@ -903,7 +1062,7 @@ ul.sign li a i {
 .business .business_box h3 {
      font-weight: bold;
      font-size: 40px;
-     color: #29426c;
+     color: rgb(50, 133, 105);
      padding-bottom: 3px;
      line-height: 42px;
 }
@@ -998,7 +1157,7 @@ ul.social_icont li a {
      bottom: 0;
      left: 0;
      transition: .5s ease;
-     background-color: #082a63de;
+     background-color: rgb(50, 133, 105);
      border-radius: 381px;
      width: 242px;
      margin: 0 auto;
@@ -1167,7 +1326,7 @@ ul.social_icont li a {
 }
 
 .contact_form .send_btn:hover {
-     background-color: #092352;
+     background-color: rgb(50, 133, 105);
      transition: ease-in all 0.5s;
      color: #fff;
 }
@@ -1249,7 +1408,7 @@ ul.social_icon li:last-child {
 }
 
 ul.social_icon li a {
-     color: #0b2554;
+     color: rgb(50, 133, 105);
      width: 40px;
      height: 40px;
      background: #fff;
@@ -1343,14 +1502,14 @@ ul.img_icon li {
 }
 
 .copyright p {
-     color: #082557;
+     color: rgb(50, 133, 105);
      font-size: 18px;
      line-height: 22px;
      text-align: center;
 }
 
 .copyright a {
-     color: #082557;
+     color: rgb(50, 133, 105);
 }
 
 .copyright a:hover {
