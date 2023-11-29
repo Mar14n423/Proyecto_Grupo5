@@ -516,18 +516,6 @@ ul.sign li a i {
      padding-top: 12px;
 }
 
-.sign_btn {
-     float: right;
-     max-width: 161px;
-     background: #f2db18;
-     font-size: 17px !important;
-     width: 100%;
-     text-align: center;
-     border-radius: 10px;
-     padding: 6px 0;
-     font-weight: 600;
-     text-transform: uppercase;
-}
 
 .sign_btn:hover {
      background-color: #000;
